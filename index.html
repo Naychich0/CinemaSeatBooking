@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Main color #214469 */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav{
+            width: 100%;
+            height: 70px;
+            background-color: #214469;
+            font-size: 32px;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            z-index: 0;
+            display: flex;
+            
+        }
+        .nav-bar{
+            padding-left: 500px;
+            padding-top: 7px;
+            font-weight: 400;
+        }
+        .nav-bar a{
+            margin-left: 20px;
+            padding: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+             /* border-bottom: 2px solid #ACC8E5;
+            border-top: 2px solid #ACC8E5; */
+        }
+        .search-box{
+            margin: auto;
+            width: 300px;
+            height: 42px;
+            /* border: 2px solid #fff; */
+            margin-right: 30px;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            background-color: #214469;
+            
+
+        }
+        .container a{
+            position: absolute;
+            margin-left: -40px;
+            margin-top: -10px;
+        }
+        .search{
+            border: none;
+            height: 100%;
+            width: 100%;
+            padding: 0 10px;
+            border-radius: 50px;
+            font-size: 18px;
+            color: #214469;
+            font-weight: 400;
+        }
+
+        .search:focus{
+            outline: none;
+        }
+        
+        .icon{
+            font-size: 20px;
+            /* color: #2980b9; */
+            padding-right: 10px;
+        }
+        .user{
+            margin-right: 10px;
+            width: 40px;
+            background-color: #000;
+            padding-left: 10px;
+            padding-top: 8px;
+            border-radius: 50%;
+        }
+       
+        .main{
+            background-color: #fff;
+            color: #214469;
+            padding-top: 90px;
+        }
+        .main-two{
+            padding-top: 20px;
+
+        }
+        .main-two .title{
+            width: 147px;
+        }
+       
+        .title{
+            margin-top: 200px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            border-bottom:3px solid #214469;
+            width:135px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 0;
+            color:#214469 ;
+            line-height: 2;
+
+        }
+        .items{
+            display: flex;
+            justify-content: space-around;
+            width: 98%;
+            padding-top: 10px;
+            margin-left: 15px;
+        }
+        .item{
+            text-align: center;            
+            width: 200px;
+            background-color: #214469;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .item img{
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+            border: none;
+        }
+        .item p{
+            font-size: 16px;
+            color: #ACC8E5;
+            text-align: left;
+            padding-left: 15px;
+            margin-top: 5px;
+        }
+        .item-title{
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+        }
+
+        .item-title button{
+            margin-right: 20px;
+            width: 70px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            background-color: #ACC8E5;
+        }
+        .item-title button a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+
+        }
+
+        /* footer */
+        .footer{
+            margin-top: 50px;
+            height: 100%;
+            color: #000;
+            background:#ACC8E5;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .logopart h1{
+            color:#000;
+            font-size: 25px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+     .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copyright{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-left: 700px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        ChiFlix Cinema
+        <div class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="payment.html">Booking Seat</a>
+        </div>
+        <div class="search-box">
+            <table class="container">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Search" class="search">
+                    </td>
+                    <td>
+                        <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ACC8E5}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a>
+                    </td>
+                                        
+                </tr>
+            </table>
+            
+        </div>
+        <div class="user">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+
+        </div>
+    </div>
+
+    <div class="main">
+        
+            <h1 class="title">Now Showing</h1>
+        
+   
+       <div class="items">
+       
+        <div class="item">
+            <img src="img/yourname.webp" alt="yourname" title="">
+            <div class="item-title">
+                <p>KiminoNawa</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/spiderman.webp" alt="spiderman" title="">
+            <div class="item-title">
+                <p>Spider Man</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/eragon.jpg" alt="eragon" title="">
+            <div class="item-title">
+                <p>Eragon</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/it.jpg" alt="it" title="">
+            <div class="item-title">
+                <p>It</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/raya.png" alt="raya" title="">
+            <div class="item-title">
+                <p>Raya</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/starwar.jpg" alt="starwar" title="">
+            <div class="item-title">
+                <p>Star Wars</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+       
+        
+       </div>
+    </div>  
+    
+    <div class="main main-two">
+        
+        <h1 class="title">Upcoming Film</h1>
+    
+
+      <div class="items">
+   
+        <div class="item">
+            <img src="img/num2.jpg" alt="num2" title="">
+             <div class="item-title">
+                <p>The Num 2</p>
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+        </div>
+        <div class="item">
+        <img src="img/Bumbblebee.jpg" alt="Bumbblebee" title="">
+        <div class="item-title">
+            <p>Bumbblebee</p>
+            <button><a href="payment.html">Book Now</a></button>
+        </div>
+        </div>
+        <div class="item">
+        <img src="img/omg.jpg" alt="omg" title="">
+        <div class="item-title">
+            <p>OMG 2</p>
+            <button><a href="payment.html">Book Now</a></button>
+        </div>
+        </div>
+        <div class="item">
+        <img src="img/barbie.webp" alt="barbie" title="">
+        <div class="item-title">
+            <p>Berbie</p>
+            <button><a href="payment.html">Book Now</a></button>
+        </div>
+        </div>
+        <div class="item">
+        <img src="img/leo.jpeg" alt="leo" title="">
+        <div class="item-title">
+            <p>Leo</p>
+            <button><a href="payment.html">Book Now</a></button>
+        </div>
+        </div>
+        <div class="item">
+        <img src="img/suzume.jpeg" alt="suzume" title="">
+        <div class="item-title">
+            <p>Suzume</p>
+            <button><a href="payment.html">Book Now</a></button>
+        </div>
+        </div>
+   
+    
+       </div>
+    </div> 
+     <!--footer  -->
+    <div class="footer">
+        <div class="inside-footer">
+            <div class="footer-container">
+                <div class="logopart">
+                    <h1>ChiFlix</h1>
+                </div>
+                <div class="copyright">
+                    <p>copyright &copy <span>Chichi</span>,All Rights Reserved-2023.</p>
+                </div>
+             
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
